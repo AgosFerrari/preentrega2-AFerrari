@@ -18,11 +18,11 @@ let buzos = [
   }
   
   function agregarAlCarrito() {
-    let numero = parseInt(prompt("Ingresá el número del buzo que deseás agregar al carrito:")) - 1;
+    let indice = parseInt(prompt("Ingresá el número del buzo que deseás agregar al carrito:")) - 1;
   
-    if (numero >= 0 && numero < buzos.length) {
+    if (indice >= 0 && indice < buzos.length) {
       carrito.push(buzos[indice]);
-      alert(buzos[numero].nombre + " se agregó a tu carrito!");
+      alert(buzos[indice].nombre + " se agregó a tu carrito!");
     } else {
       alert("Número de buzo no válido.");
     }
